@@ -12,7 +12,7 @@
     </change-notes>
     <version>1.0.0</version>
     <vendor url="https://code.google.com/p/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
-    <idea-version since-build="7361"/>
+    <idea-version since-build="9000"/>
 
     <application-components>
         <component>
