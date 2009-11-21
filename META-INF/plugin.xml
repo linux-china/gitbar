@@ -1,0 +1,69 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin url="https://sourceforge.net/projects/svnbar">
+    <name>Git Bar</name>
+    <id>GitBar</id>
+    <description>Plugin creates quick access buttons for use Git. Based on "SVN bar" plugin</description>
+    <change-notes>
+        <![CDATA[<html><body>
+            <ul> 1.0.0 - Initial release
+                <li>9 buttons added</li>
+            </ul>
+        </body></html>]]>
+    </change-notes>
+    <version>1.0.0</version>
+    <vendor url="https://code.google.com/p/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
+    <idea-version since-build="7361"/>
+
+    <application-components>
+        <component>
+            <implementation-class>org.jetbrains.idea.plugin.gitbar.GitBar</implementation-class>
+            <interface-class>org.jetbrains.idea.plugin.gitbar.GitBar</interface-class>
+        </component>
+    </application-components>
+
+    <actions>
+        <action id="GitBar.ShowHistory" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Show History" description="Show history of file" icon="/icons/showHistory.png">
+        </action>
+        <action id="GitBar.Add" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Add Snapshot" description="Add file/directory to Git" icon="/icons/add.png">
+        </action>
+        <action id="GitBar.Commit" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Commit" description="Git Commit" icon="/icons/commit.png">
+        </action>
+        <action id="GitBar.Revert" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Revert" description="Revert Git action" icon="/icons/rollback.png">
+        </action>
+        <action id="GitBar.Branch" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Checkout Branch" description="Git Checkout Branch" icon="/icons/checkoutBranch.png">
+        </action>
+        <action id="GitBar.Merge" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Merge Changes" description="Git Merge Changes" icon="/icons/mergeBranch.png">
+        </action>
+        <action id="GitBar.Pull" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Pull Changes" description="Git Pull Changes" icon="/icons/pull.png">
+        </action>
+        <action id="GitBar.Push" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Push Changes" description="Git Push Changes" icon="/icons/push.png">
+        </action>
+        <action id="GitBar.DiffWithLast" class="org.jetbrains.idea.plugin.gitbar.action.DefaultGitAction"
+                text="Git Diff with last" description="Compare local copy with last version" icon="/icons/diffLast.png">
+        </action>
+
+        <group>
+            <reference ref="GitBar.ShowHistory"/>
+            <reference ref="GitBar.Add"/>
+            <reference ref="GitBar.Commit"/>
+            <reference ref="GitBar.Revert"/>
+            <reference ref="GitBar.Branch"/>
+            <reference ref="GitBar.Merge"/>
+            <reference ref="GitBar.Pull"/>
+            <reference ref="GitBar.Push"/>
+            <reference ref="GitBar.DiffWithLast"/>
+            <separator/>
+            <add-to-group group-id="MainToolBar" anchor="before" relative-to-action="HelpTopics"/>
+        </group>
+    </actions>
+
+
+</idea-plugin>
