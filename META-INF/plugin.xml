@@ -1,5 +1,5 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
-<idea-plugin url="https://sourceforge.net/projects/svnbar">
+<idea-plugin url="http://github.com/linux-china/gitbar">
     <name>Git Bar</name>
     <id>GitBar</id>
     <description>Plugin creates quick access buttons for use Git. Based on "SVN bar" plugin</description>
@@ -11,7 +11,7 @@
         </body></html>]]>
     </change-notes>
     <version>1.0.0</version>
-    <vendor url="https://code.google.com/p/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
+    <vendor url="http://github.com/linux-china/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
     <idea-version since-build="9000"/>
 
     <application-components>
