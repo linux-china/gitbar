@@ -4,11 +4,18 @@
     <id>GitBar</id>
     <description>Plugin creates quick access buttons for use Git. Based on "SVN bar" plugin</description>
     <change-notes>
-        <![CDATA[<html><body>
-            <ul> 1.0.0 - Initial release
-                <li>9 buttons added</li>
-            </ul>
-        </body></html>]]>
+        <![CDATA[
+        <html>
+        <body>
+        <ul> 1.0.1
+            <li>IDEA 11 compiled</li>
+        </ul>
+        <ul> 1.0.0 - Initial release
+            <li>9 buttons added</li>
+        </ul>
+        </body>
+        </html>
+        ]]>
     </change-notes>
     <version>1.0.1</version>
     <vendor url="http://github.com/linux-china/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
