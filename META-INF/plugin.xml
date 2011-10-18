@@ -10,9 +10,9 @@
             </ul>
         </body></html>]]>
     </change-notes>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <vendor url="http://github.com/linux-china/gitbar" email="linux_china@hotmail.com">Linux China</vendor>
-    <idea-version since-build="9000"/>
+    <idea-version since-build="110.1"/>
 
     <application-components>
         <component>
