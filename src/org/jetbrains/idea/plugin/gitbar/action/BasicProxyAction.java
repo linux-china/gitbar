@@ -71,7 +71,7 @@ public abstract class BasicProxyAction extends AnAction {
                 anaction.beforeActionPerformedUpdate(actionEvent);
             else {
                 Project project = actionEvent.getData(DataKeys.PROJECT);
-                Messages.showMessageDialog(project, "Action not found: " + getActionId(), "SVN Bar error", Messages.getErrorIcon());
+                Messages.showMessageDialog(project, "Action not found: " + getActionId(), "Git Bar error", Messages.getErrorIcon());
             }
         }
         catch (Exception e) {
